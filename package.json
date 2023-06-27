@@ -1,0 +1,18 @@
+{
+  "name": "travel_planner",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.7.0",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  }
+}

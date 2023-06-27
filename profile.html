@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>TRAVEL GATE - login</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free HTML Templates" name="keywords" />
+    <meta content="Free HTML Templates" name="description" />
+
+    <!-- Favicon -->
+    <!-- <link href="img/favicon.ico" rel="icon"> -->
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/profile.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+            <div class="d-inline-flex align-items-center">
+              <p><i class="fa fa-envelope mr-2"></i>travel.gate@gmail.com</p>
+              <p class="text-body px-3">|</p>
+              <p><i class="fa fa-phone-alt mr-2"></i>+011111111</p>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center text-lg-right">
+            <div class="d-inline-flex align-items-center">
+              <a class="text-primary px-3" href="">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a class="text-primary px-3" href="">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a class="text-primary px-3" href="">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a class="text-primary px-3" href="">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a class="text-primary pl-3" href="">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a class="text-primary px-3" href="profile.html">
+                <i class="fas fa-user"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+      <div
+        class="container-lg position-relative p-0 px-lg-3"
+        style="z-index: 9"
+      >
+        <nav
+          class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5"
+        >
+          <a href="" class="navbar-brand">
+            <h1 class="m-0 text-primary">
+              <span class="text-dark">TRAVEL</span>GATE
+            </h1>
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between px-3"
+            id="navbarCollapse"
+          >
+            <div class="navbar-nav ml-auto py-0">
+              <a href="index.html" class="nav-item nav-link">Home</a>
+              <a href="package.html" class="nav-item nav-link">Packages</a>
+              <a href="tour.html" class="nav-item nav-link">Tour</a>
+              <a href="trip.html" class="nav-item nav-link">Trip</a>
+              <a href="cart.html" class="nav-item nav-link">Cart</a>
+              <a href="rate.html" class="nav-item nav-link">Rate</a>
+              <a href="about.html" class="nav-item nav-link">About</a>
+              <a href="login.html" id="login" class="nav-item nav-link"
+                >Login</a
+              >
+
+              <a class="nabv-item nav-link" onclick="logout()" id="logout"
+                >Log Out</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- /////  start  ////// -->
+    <div class="container rounded bg-white mt-5 mb-5">
+      <div class="row">
+        <div class="col-md-4 border-right">
+          <div
+            class="d-flex flex-column align-items-center text-center p-3 py-5"
+          >
+            <img
+              class="rounded-circle mt-5"
+              width="150px"
+              id="userImage"
+              src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"
+            />
+            <span class="font-weight-bold" id="userName"> User</span>
+            <span class="text-black-50" id="userEmail">user@mail.com</span>
+            <span> </span>
+          </div>
+        </div>
+        <div class="col-md-6 border-right">
+          <div class="p-3 py-5" id="profileData">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h4 class="text-right">Profile Settings</h4>
+            </div>
+            <div class="row mt-2">
+              <div class="col-md-12">
+                <label class="labels">Name</label
+                ><input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="name"
+                  value=""
+                />
+              </div>
+              <!-- <div class="col-md-6"><label class="labels">password</label><input type="text" id="" class="form-control" value="" placeholder="password"></div> -->
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-12">
+                <label class="labels">Email ID</label
+                ><input
+                  type="text"
+                  id="email"
+                  class="form-control"
+                  placeholder="enter email id"
+                  value=""
+                />
+              </div>
+              <div class="col-md-12">
+                <label class="labels">Role</label
+                ><input
+                  type="text"
+                  id="role"
+                  class="form-control"
+                  placeholder="role"
+                  value=""
+                />
+              </div>
+              <div class="col-md-12">
+                <label class="labels">Address</label
+                ><input
+                  type="text"
+                  id="address"
+                  class="form-control"
+                  placeholder="enter address line 1"
+                  value=""
+                />
+              </div>
+
+              <div class="col-md-12">
+                <label class="labels">Contact</label
+                ><input
+                  type="text"
+                  id="contact"
+                  class="form-control"
+                  placeholder="contact"
+                  value=""
+                />
+              </div>
+              <div class="col-md-12">
+                <label class="labels">Website</label
+                ><input
+                  type="text"
+                  id="website"
+                  class="form-control"
+                  placeholder="website"
+                  value=""
+                />
+              </div>
+              <div class="col-md-12">
+                <label class="labels">overview</label
+                ><input
+                  type="text"
+                  id="overview"
+                  class="form-control"
+                  placeholder="overview"
+                  value=""
+                />
+              </div>
+              <div class="col-md-12">
+                <label class="labels">Country</label
+                ><input
+                  type="text"
+                  id="country"
+                  class="form-control"
+                  placeholder="country"
+                  value=""
+                />
+              </div>
+              <div class="col-md-12">
+                <label class="labels">City</label
+                ><input
+                  type="text"
+                  id="city"
+                  class="form-control"
+                  placeholder="city"
+                  value=""
+                />
+              </div>
+            </div>
+
+            <div class="mt-5 text-center">
+              <button
+                class="btn btn-primary profile-button"
+                id="updateProfile"
+                type="button"
+              >
+                update Profile
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ///////////   END  //////// -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="fa fa-angle-double-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script type="module" src="lib/easing/easing.min.js"></script>
+    <script
+      type="module"
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+    ></script>
+    <script
+      type="module"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+    ></script>
+    <script type="module" src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script type="module" src="lib/tempusdominus/js/moment.min.js"></script>
+    <script
+      type="module"
+      src="lib/tempusdominus/js/moment-timezone.min.js"
+    ></script>
+    <script
+      type="module"
+      src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"
+    ></script>
+
+    <script type="module" src="mail/jqBootstrapValidation.min.js"></script>
+    <!-- Contact Javascript File -->
+    <script type="module" src="mail/contact.js"></script>
+
+    <!-- Javascript -->
+    <script type="module" src="js/profile.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
