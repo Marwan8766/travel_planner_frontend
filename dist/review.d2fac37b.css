@@ -1,0 +1,142 @@
+body {
+  background: #dcdcdc;
+}
+
+.offer-dedicated-nav .nav-link.active, .offer-dedicated-nav .nav-link:hover, .offer-dedicated-nav .nav-link:focus {
+  color: #3868fb;
+  border-color: #3868fb;
+}
+
+.offer-dedicated-nav .nav-link {
+  color: #000;
+  border-bottom: 2px solid #fff;
+  padding: 16px 0;
+  font-weight: 600;
+}
+
+.offer-dedicated-nav .nav-item {
+  margin: 0 37px 0 0;
+}
+
+.restaurant-detailed-action-btn {
+  margin-top: 12px;
+}
+
+.restaurant-detailed-header-right .btn-success {
+  border-radius: 3px;
+  min-width: 130px;
+  height: 45px;
+  margin: -18px 0 18px;
+  padding: 7px;
+}
+
+.text-black {
+  color: #000;
+}
+
+.icon-overlap {
+  opacity: .23;
+  font-size: 74px;
+  position: absolute;
+  bottom: -23px;
+  right: -32px;
+}
+
+.menu-list img {
+  object-fit: cover;
+  width: 41px;
+  height: 41px;
+}
+
+.restaurant-detailed-header-left img {
+  object-fit: cover;
+  border-radius: 3px;
+  width: 88px;
+  height: 88px;
+  box-shadow: 0 .125rem .25rem #00000013 !important;
+}
+
+.reviews-members .media .mr-3 {
+  object-fit: cover;
+  width: 56px;
+  height: 56px;
+}
+
+.rounded-pill {
+  border-radius: 50rem !important;
+}
+
+.total-like-user {
+  border: 2px solid #fff;
+  width: 34px;
+  height: 34px;
+  box-shadow: 0 .125rem .25rem #00000013 !important;
+}
+
+.total-like-user-main a {
+  margin: 0 -17px 0 0;
+  display: inline-block;
+}
+
+.total-like {
+  vertical-align: top;
+  border: 1px solid;
+  border-radius: 50px;
+  height: 34px;
+  padding: 0 13px;
+  font-weight: 500;
+  line-height: 33px;
+  display: inline-block;
+}
+
+.restaurant-detailed-ratings-and-reviews hr {
+  margin: 0 -24px;
+}
+
+.graph-star-rating-header .star-rating {
+  font-size: 17px;
+}
+
+.rating-list {
+  width: 100%;
+  margin-bottom: 15px;
+  display: inline-flex;
+}
+
+.rating-list-left {
+  width: 10%;
+  height: 16px;
+  line-height: 29px;
+}
+
+.rating-list-center {
+  width: 80%;
+}
+
+.rating-list-right {
+  text-align: right;
+  width: 10%;
+  line-height: 29px;
+}
+
+.restaurant-slider-pics {
+  z-index: 999;
+  padding: 0 10px;
+  font-size: 12px;
+  bottom: 0;
+  left: 0;
+}
+
+.restaurant-slider-view-all {
+  z-index: 999;
+  bottom: 15px;
+  right: 15px;
+}
+
+.progress {
+  background: #f2f4f8;
+  border-radius: 0;
+  height: 30px;
+}
+
+/*# sourceMappingURL=review.d2fac37b.css.map */

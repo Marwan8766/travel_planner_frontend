@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TRAVEL GATE</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <!-- <link href="img/favicon.ico" rel="icon"> -->
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/index.2fe1a956.css" rel="stylesheet">
+    <link href="/index.c85d3c5b.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/about.f04df894.css" rel="stylesheet">
+    <link href="/index.b2625c6b.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+            <div class="d-inline-flex align-items-center">
+              <p><i class="fa fa-envelope mr-2"></i>travel.gate@gmail.com</p>
+              <p class="text-body px-3">|</p>
+              <p><i class="fa fa-phone-alt mr-2"></i>+011111111</p>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center text-lg-right">
+            <div class="d-inline-flex align-items-center">
+              <a class="text-primary px-3" href="">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a class="text-primary px-3" href="">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a class="text-primary px-3" href="">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a class="text-primary px-3" href="">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a class="text-primary pl-3" href="">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a class="text-primary px-3" href="/profile.html">
+                <i class="fas fa-user"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+      <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+          <a href="" class="navbar-brand">
+            <h1 class="m-0 text-primary">
+              <span class="text-dark">TRAVEL</span>GATE
+            </h1>
+          </a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+            <div class="navbar-nav ml-auto py-0">
+              <a href="/index.html" class="nav-item nav-link">Home</a>
+              <!-- <a href="service.html" class="nav-item nav-link">Services</a> -->
+
+              <a href="/package.html" class="nav-item nav-link">Packages</a>
+              <a href="/tour.html" class="nav-item nav-link">Tour</a>
+              <a href="/trip.html" class="nav-item nav-link">Trip</a>
+              <a href="/contact.html" class="nav-item nav-link">Contact</a>
+              <a href="/review.html" class="nav-item nav-link">view</a>
+              <a href="/about.html" class="nav-item nav-link">About</a>
+              <a href="/profile.html" class="nav-item nav-link">profile</a>
+
+              <a class="nabv-item nav-link" onclick="logout()" id="logout">Log Out</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <div class="wrapper">
+      <div class="tabs">
+        <button class="navTab active" data-toggle="login">Login</button>
+        <button class="navTab" data-toggle="register">Register</button>
+      </div>
+      <div class="contentWrapper">
+        <div class="content active" id="login">
+          <form action="#" method="POST" autocomplete="off">
+            <div class="formGroup">
+              <label for="email">Email address</label>
+              <input type="email" id="email" placeholder="name@example.com" required="">
+              <small class="messageHelp">
+                We'Il never share your email with anyone else
+              </small>
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="Password" required="">
+              <small class="messageHelp">Password incorrect</small>
+              <div>
+                <input type="checkbox" id="checkBox">
+                <span>Keep me Signed in</span>
+              </div>
+              <a href="#" id="passwordReset">Forgot password?</a>
+              <button class="btn" type="submit">Login</button>
+            </div>
+          </form>
+        </div>
+        <div class="content" id="register">
+          <form action="#" method="POST" autocomplete="off">
+            <div class="formGroup">
+              <label for="username">Username</label>
+              <input type="text" id="username" placeholder="Username" required="">
+              <label for="email">Email address</label>
+              <input type="email" id="email" placeholder="name@example.com" required="" title="Enter a valid email address">
+              <small class="messageHelp"> Enter a valid email address </small>
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="Password" required="" title="Must be at least 6 characters">
+              <small class="messageHelp">Must be at least 6 characters</small>
+              <label for="confirmPassword">Confirm password</label>
+              <input type="password" id="confirmPassword" placeholder="Confirm Password">
+              <small class="messageHelp">Password incorrect</small>
+              <button class="btn" type="submit">Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer=""></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" defer=""></script>
+    <script src="/index.8a0885ab.js" defer=""></script>
+    <script src="/index.2901d0e3.js" defer=""></script>
+    <script src="/index.2bf9923b.js" defer=""></script>
+    <script src="/index.75360aeb.js" defer=""></script>
+    <script src="/index.990880d7.js" defer=""></script>
+
+    <!-- Contact Javascript File -->
+    <!-- <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script> -->
+
+    <!-- Javascript -->
+    <script src="/index.fbb3188c.js" defer=""></script>
+    <script src="/about.d6022099.js" defer=""></script>
+  </body>
+</html>

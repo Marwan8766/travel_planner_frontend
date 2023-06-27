@@ -1,0 +1,617 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TRAVEL GATE</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <!-- <link href="img/favicon.ico" rel="icon"> -->
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/index.2fe1a956.css" rel="stylesheet">
+    <link href="/index.c85d3c5b.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/index.b2625c6b.css" rel="stylesheet">
+    <link href="/review.d2fac37b.css" rel="stylesheet">
+    <link href="/rate.7da12fc2.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+   <!-- Topbar Start -->
+   <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <p><i class="fa fa-envelope mr-2"></i>travel.gate@gmail.com</p>
+                    <p class="text-body px-3">|</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+011111111</p>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-primary px-3" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-primary px-3" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-primary px-3" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-primary px-3" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-primary pl-3" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a class="text-primary px-3" href="/profile.html">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+
+
+<!-- Navbar Start -->
+<div class="container-fluid position-relative nav-bar p-0">
+    <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+            <a href="" class="navbar-brand">
+                <h1 class="m-0 text-primary"><span class="text-dark">TRAVEL</span>GATE</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="navbar-nav ml-auto py-0">
+                    <a href="/index.html" class="nav-item nav-link">Home</a>
+                    <a href="/package.html" class="nav-item nav-link">Packages</a>
+                    <a href="/tour.html" class="nav-item nav-link">Tour</a>
+                    <a href="/trip.html" class="nav-item nav-link">Trip</a>
+                    <a href="/cart.html" class="nav-item nav-link">Cart</a>
+                    <a href="/rate.html" class="nav-item nav-link">Rate</a>
+                    <a href="/about.html" class="nav-item nav-link">About</a>
+                    <a href="/login.html" id="login" class="nav-item nav-link">Login</a>
+
+                    <a class="nabv-item nav-link" onclick="logout()" id="logout">Log Out</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+
+<!-- Header Start -->
+    <div class="container-fluid page-header">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+                <h3 class="display-4 text-white text-uppercase">review</h3>
+                <div class="d-inline-flex text-white">
+                    <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
+                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                    <p class="m-0 text-uppercase">review</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Booking Start -->
+    <div class="container-fluid booking mt-5 pb-5">
+        <div class="container pb-5">
+            <div class="bg-light shadow" style="padding: 30px">
+                <div class="row align-items-center" style="min-height: 60px">
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="mb-3 mb-md-0">
+                                    <select class="custom-select px-4" style="height: 47px">
+                                        <option selected="">Destination</option>
+                                        <option value="1">Destination 1</option>
+                                        <option value="2">Destination 1</option>
+                                        <option value="3">Destination 1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-3 mb-md-0">
+                                    <div class="date" id="date1" data-target-input="nearest">
+                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Depart Date" data-target="#date1" data-toggle="datetimepicker">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-3 mb-md-0">
+                                    <div class="date" id="date2" data-target-input="nearest">
+                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Return Date" data-target="#date2" data-toggle="datetimepicker">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-3 mb-md-0">
+                                    <select class="custom-select px-4" style="height: 47px">
+                                        <option selected="">Duration</option>
+                                        <option value="1">Duration 1</option>
+                                        <option value="2">Duration 1</option>
+                                        <option value="3">Duration 1</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Booking End -->
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Blog Detail Start -->
+                    <div class="pb-3">
+                        <div class="blog-item">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="/blog-1.3531d324.jpg" alt="">
+                                <div class="blog-date">
+                                    <h6 class="font-weight-bold mb-n1">01</h6>
+                                    <small class="text-white text-uppercase">Jan</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white mb-3" style="padding: 30px">
+                            <!-- <div class="d-flex mb-3">
+                                <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
+                                <span class="text-primary px-2">|</span>
+                                <a class="text-primary text-uppercase text-decoration-none" href="">Tours & Travel</a>
+                            </div> -->
+                            <h2 class="mb-3">Dolor justo sea kasd lorem clita justo diam amet</h2>
+                            <p>Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut
+                                magna lorem. Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet
+                                amet magna accusam consetetur eirmod. Kasd accusam sit ipsum sadipscing et at at
+                                sanctus et. Ipsum sit gubergren dolores et, consetetur justo invidunt at et
+                                aliquyam ut et vero clita. Diam sea sea no sed dolores diam nonumy, gubergren
+                                sit stet no diam kasd vero.
+                            </p>
+
+                            
+                        </div>
+                    </div>
+                    <!-- Blog Detail End -->
+    
+                   
+    
+                   
+                </div>
+    
+                <div class="col-lg-4 mt-5 mt-lg-0">
+                    <!-- Author Bio -->
+                    <div class="d-flex flex-column text-center bg-white mb-5 py-5 px-4">
+                        <img src="/download.7dccf113.png" class="img-fluid mx-auto mb-3" style="width: 100px">
+                        <h3 class="text-primary mb-3">user</h3>
+                        <p>Conset elitr erat vero dolor ipsum et diam, eos dolor lorem, ipsum sit no ut est  ipsum erat kasd amet elitr</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="text-primary px-2" href="">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="text-primary px-2" href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="text-primary px-2" href="">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a class="text-primary px-2" href="">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a class="text-primary px-2" href="">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- rateing Start -->
+
+    <!-- <div class="height-100 container d-flex justify-content-center align-items-center">
+    
+        <div class="card p-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="ratings">
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h5 class="review-count">12 Reviews</h5>
+            </div>
+            
+            
+            <div class="mt-5 d-flex justify-content-between align-items-center">
+                <h5 class="review-stat">Cleanliness</h5>
+                <div class="small-ratings">
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                
+            </div>
+            
+            <div class="mt-1 d-flex justify-content-between align-items-center">
+                <h5 class="review-stat">Approachability of SLT</h5>
+                <div class="small-ratings">
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            
+            
+            <div class="mt-1 d-flex justify-content-between align-items-center">
+                <h5 class="review-stat">Front Office</h5>
+                <div class="small-ratings">
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            
+            
+            <div class="mt-1 d-flex justify-content-between align-items-center">
+                <h5 class="review-stat">CPD</h5>
+                <div class="small-ratings">
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                </div>
+            </div>
+            
+            
+            <div class="mt-1 d-flex justify-content-between align-items-center">
+                <h5 class="review-stat">Pastrol</h5>
+                <div class="small-ratings">
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            
+            <div class="mt-1 d-flex justify-content-between align-items-center">
+                <h5 class="review-stat">Office Space</h5>
+                <div class="small-ratings">
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+        
+    </div> -->
+
+    <!-- /////////////////////// -->
+
+    <div class="container d-flex justify-content-center mt-5">
+
+        <div class="card text-center mb-5">
+
+            <!-- <div class="circle-image">
+                <img src="https://i.imgur.com/hczKIze.jpg" width="50">
+            </div> -->
+
+                <span class="dot"></span>
+
+            <!-- <span class="name mb-1 fw-500">Bryan Williams</span> -->
+            <!-- <small class="text-black-50">Tata Ace</small> -->
+            <!-- <small class="text-black-50 font-weight-bold">QP09AA9090</small> -->
+
+
+
+            <div class="location mt-4">
+
+                <!-- <span class="d-block"><i class="fa fa-map-marker start"></i> <small class="text-truncate ml-2">Ganesha Road, preet vihar new delhi</small> </span>
+
+                <span><i class="fa fa-map-marker stop mt-2"></i> <small class="text-truncate ml-2">Mandir Road, Mayur vihar, new delhi</small> </span> -->
+
+                <!-- <div class="height-100 container d-flex justify-content-center align-items-center"> -->
+    
+                    <!-- <div class="card p-3"> -->
+                        <!-- <div class="d-flex justify-content-between align-items-center">
+                            <div class="ratings">
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <h5 class="review-count">12 Reviews</h5>
+                        </div>
+                        
+                        
+                        <div class="mt-1 d-flex justify-content-between align-items-center">
+                            <h5 class="review-stat">Cleanliness</h5>
+                            <div class="small-ratings">
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="mt-1 d-flex justify-content-between align-items-center">
+                            <h5 class="review-stat">Approachability of SLT</h5>
+                            <div class="small-ratings">
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="mt-1 d-flex justify-content-between align-items-center">
+                            <h5 class="review-stat">Front Office</h5>
+                            <div class="small-ratings">
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="mt-1 d-flex justify-content-between align-items-center">
+                            <h5 class="review-stat">CPD</h5>
+                            <div class="small-ratings">
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="mt-1 d-flex justify-content-between align-items-center">
+                            <h5 class="review-stat">Pastrol</h5>
+                            <div class="small-ratings">
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-1 d-flex justify-content-between align-items-center">
+                            <h5 class="review-stat">Office Space</h5>
+                            <div class="small-ratings">
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div> -->
+                    <!-- </div> -->
+                    
+                <!-- </div> -->
+                
+            </div>
+
+
+            <div class="rate bg-success py-3 text-white mt-3">
+
+                <h6 class="mb-0">Rate your driver</h6>
+
+                <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                </div>
+
+                <div class="form-group">
+                    <label>Your Comment</label>
+                    <textarea class="form-control"></textarea>
+                </div>
+                
+                <div class="buttons px-4 mt-0">
+
+                <button class="btn btn-warning btn-block rating-submit">Submit</button>
+                
+            </div>
+
+                
+            </div>
+
+
+
+
+            
+            
+        </div>
+        
+
+
+    </div>
+    
+    <!-- rating End -->
+    
+                    <!-- Search Form -->
+                    <!-- <div class="mb-5">
+                        <div class="bg-white" style="padding: 30px;">
+                            <div class="input-group">
+                                <input type="text" class="form-control p-4" placeholder="Keyword">
+                                <div class="input-group-append">
+                                    <span class="input-group-text bg-primary border-primary text-white"><i
+                                            class="fa fa-search"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    
+    
+                    <!-- Recent Post -->
+
+
+                    <!-- <div class="mb-5">
+                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Recent Post</h4>
+                        <a class="d-flex align-items-center text-decoration-none bg-white mb-3" href="">
+                            <img class="img-fluid" src="img/blog-100x100.jpg" alt="">
+                            <div class="pl-3">
+                                <h6 class="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
+                                <small>Jan 01, 2050</small>
+                            </div>
+                        </a>
+                        <a class="d-flex align-items-center text-decoration-none bg-white mb-3" href="">
+                            <img class="img-fluid" src="img/blog-100x100.jpg" alt="">
+                            <div class="pl-3">
+                                <h6 class="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
+                                <small>Jan 01, 2050</small>
+                            </div>
+                        </a>
+                        <a class="d-flex align-items-center text-decoration-none bg-white mb-3" href="">
+                            <img class="img-fluid" src="img/blog-100x100.jpg" alt="">
+                            <div class="pl-3">
+                                <h6 class="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
+                                <small>Jan 01, 2050</small>
+                            </div>
+                        </a>
+                    </div> -->
+
+                    
+    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    <!-- Blog End -->
+    
+    
+    
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px">
+            <div class="row pt-5">
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <a href="" class="navbar-brand">
+                        <h1 class="text-primary"><span class="text-white">TRAVEL</span>GATE</h1>
+                    </a>
+                    <p>Our Company</p>
+                    <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px">Follow Us</h6>
+                    <div class="d-flex justify-content-start">
+                        <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px">Our Services</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
+                        <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Usefull Links</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
+                        <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                    </div>
+                </div> -->
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px">Contact Us</h5>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, Egypt, Cairo</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+011111111111</p>
+                    <p><i class="fa fa-envelope mr-2"></i>travel.gate@gmail.com</p>
+                    <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px">Newsletter</h6>
+                    <div class="w-100">
+                        <div class="input-group">
+                            <input type="text" class="form-control border-light" style="padding: 25px" placeholder="Your Email">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary px-3">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer=""></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" defer=""></script>
+    <script src="/index.8a0885ab.js" defer=""></script>
+    <script src="/index.2901d0e3.js" defer=""></script>
+    <script src="/index.2bf9923b.js" defer=""></script>
+    <script src="/index.75360aeb.js" defer=""></script>
+    <script src="/index.990880d7.js" defer=""></script>
+
+    <!-- Contact Javascript File -->
+    <script src="/index.deb440d4.js" defer=""></script>
+    <script src="/index.b51dc45b.js" defer=""></script>
+
+    <!-- Template Javascript -->
+    <script src="/review.adafbbe2.js" defer=""></script>
+    <script src="/index.fbb3188c.js" defer=""></script>
+</body>
+
+</html>
